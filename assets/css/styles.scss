@@ -29,6 +29,13 @@ $white: #ffffff;
     font-family: "Aleo", serif;
     color: $white;
   }
+  &__super--sub-heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: $white;
+  }
   &__description {
     font-size: 16px;
     line-height: 26px;
@@ -218,7 +225,7 @@ $white: #ffffff;
   background-size: cover;
   background-position: center;
   max-height: 800px;
-  padding: 150px 100px 100px 0px;
+  padding: 130px 100px 90px 0px;
   display: flex;
   justify-content: flex-end;
 }
@@ -229,13 +236,13 @@ $white: #ffffff;
   background-color: $grey;
   opacity: 0.9;
   &__city {
-    padding: 50px 0px 40px 30px;
+    padding: 50px 0px 20px 30px;
   }
   &__place {
     padding-left: 30px;
   }
   &__description {
-    padding: 25px 10px 50px 30px;
+    padding: 25px 10px 30px 30px;
   }
   &__button {
     padding: 0px 0px 50px 30px;
@@ -264,28 +271,57 @@ $white: #ffffff;
 // container
 .testimonial-sam {
   margin: 80px 0px 100px 0px;
+  background-color: $dark-grey;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 80%;
   //    heading
   &__info--heading {
-    padding: 10px 0px 15px 20px;
+    padding: 10px 0px 0px 40px;
   }
   // quote
   &__quote {
+    margin: 5px 22px 15px 22px;
     display: flex;
     // quote icon
     &--icon {
-      font-size: 20px;
+      font-size: 24px;
       color: $blue;
       padding: 10px;
     }
   }
 }
 
+// FOOTER
+// container
+.footer {
+  background-color: $grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  // bhromaon logo
+  &__logo {
+    padding-bottom: 20px;
+  }
+  // bhromaon moto
+  &__moto {
+    padding-bottom: 20px;
+  }
+  // socail-media icons
+  &__socail-media--icon {
+    padding-right: 15px;
+    font-size: 18px;
+    &-blue {
+      color: $blue;
+    }
+  }
+}
+
 // MEDIA QUERIES
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   // UNIVERSAL
   .text {
     &__title {
@@ -303,9 +339,10 @@ $white: #ffffff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 300px;
+    
     &--input {
       margin-bottom: 20px;
+      padding: 20px 60px 20px 60px;
     }
   }
   // NAV
@@ -343,6 +380,17 @@ $white: #ffffff;
     }
     &__description {
       padding: 15px 10px 20px 30px;
+    }
+  }
+  //   TESTIMONIALS BLOCK
+  .testimonials__container {
+    max-height: 1000px;
+  }
+  .testimonial-sam {
+    flex-direction: column;
+    align-items: center;
+    &__image {
+      max-width: 300px;
     }
   }
 }

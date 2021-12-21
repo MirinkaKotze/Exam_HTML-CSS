@@ -19,6 +19,13 @@
   font-family: "Aleo", serif;
   color: #ffffff;
 }
+.text__super--sub-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
 .text__description {
   font-size: 16px;
   line-height: 26px;
@@ -183,7 +190,7 @@
   background-size: cover;
   background-position: center;
   max-height: 800px;
-  padding: 150px 100px 100px 0px;
+  padding: 130px 100px 90px 0px;
   display: flex;
   justify-content: flex-end;
 }
@@ -195,13 +202,13 @@
   opacity: 0.9;
 }
 .destination__city {
-  padding: 50px 0px 40px 30px;
+  padding: 50px 0px 20px 30px;
 }
 .destination__place {
   padding-left: 30px;
 }
 .destination__description {
-  padding: 25px 10px 50px 30px;
+  padding: 25px 10px 30px 30px;
 }
 .destination__button {
   padding: 0px 0px 50px 30px;
@@ -224,24 +231,48 @@
 
 .testimonial-sam {
   margin: 80px 0px 100px 0px;
+  background-color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 80%;
 }
 .testimonial-sam__info--heading {
-  padding: 10px 0px 15px 20px;
+  padding: 10px 0px 0px 40px;
 }
 .testimonial-sam__quote {
+  margin: 5px 22px 15px 22px;
   display: flex;
 }
 .testimonial-sam__quote--icon {
-  font-size: 20px;
+  font-size: 24px;
   color: #5474fd;
   padding: 10px;
 }
 
-@media (max-width: 600px) {
+.footer {
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+.footer__logo {
+  padding-bottom: 20px;
+}
+.footer__moto {
+  padding-bottom: 20px;
+}
+.footer__socail-media--icon {
+  padding-right: 15px;
+  font-size: 18px;
+}
+.footer__socail-media--icon-blue {
+  color: #5474fd;
+}
+
+@media (max-width: 700px) {
   .text__title {
     font-size: 36px;
   }
@@ -256,10 +287,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 300px;
   }
   .search__block--input {
     margin-bottom: 20px;
+    padding: 20px 60px 20px 60px;
   }
 
   .nav {
@@ -296,6 +327,18 @@
   }
   .destination__description {
     padding: 15px 10px 20px 30px;
+  }
+
+  .testimonials__container {
+    max-height: 1000px;
+  }
+
+  .testimonial-sam {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-sam__image {
+    max-width: 300px;
   }
 }
 
