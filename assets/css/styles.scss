@@ -1,0 +1,396 @@
+// COLOURS
+$blue: #5474fd;
+$dark-grey: #333333;
+$grey: #232323;
+$light-grey: #e8e8e8;
+$white: #ffffff;
+
+// UNIVERSAL MODIFIERS
+// text styles
+.text {
+  &__title {
+    font-family: "Josefin Sans", sans-serif;
+    color: $white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+    letter-spacing: 4.8px;
+  }
+  &__moto {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+  }
+  &__sub-heading {
+    font-size: 36px;
+    line-height: 26px;
+    font-family: "Aleo", serif;
+    color: $white;
+  }
+  &__super--sub-heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: $white;
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    color: $light-grey;
+  }
+}
+// search-button + icon
+.search-button {
+  &__text {
+    background-color: $blue;
+    border: solid $white 1px;
+    font-family: "Aleo", serif;
+    color: $white;
+    padding: 15px 20px 15px 20px;
+  }
+  &__icon {
+    padding-left: 10px;
+  }
+}
+// blue-button
+.button {
+  background-color: $blue;
+  font-family: "Aleo", serif;
+  color: $white;
+  padding: 15px 40px 15px 40px;
+  border: none;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// SCREEN STYLES AND POSITION
+.screen {
+  font-family: "Aleo", serif;
+  color: $white;
+}
+
+// SEARCH BLOCK
+// Container
+.search {
+  background-image: url(../images/bg-search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  //  heading position
+  &__heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 260px;
+  }
+  // moto position
+  &__moto {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  // search block position
+  &__block {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 50px;
+    // input styles
+    &--input {
+      border: solid $white 1px;
+      padding: 20px 110px 20px 110px;
+      width: 250px;
+    }
+    //   button styles
+    &--button {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// NAV BLOCK
+// Container
+.nav {
+  background-color: $blue;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  // items postion + styles
+  &__list--item {
+    padding-left: 25px;
+    text-decoration: none;
+    color: $white;
+    &:hover {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+// EXPLORE BLOCK
+// container
+.explore {
+  background-image: url(../images/bg-explore.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  // info block (left info)
+  &__info {
+    max-width: 560px;
+    &--heading {
+      padding-bottom: 50px;
+    }
+    &--description-1 {
+      padding-bottom: 20px;
+    }
+    &--description-2 {
+      padding-bottom: 45px;
+    }
+  }
+  // images (on the right)
+  &__images {
+    display: flex;
+    flex-direction: column;
+    &--house {
+      max-width: 350px;
+      padding-bottom: 50px;
+    }
+    &--mountain {
+      padding-left: 100px;
+    }
+  }
+}
+
+// ICON-LINKS BLOCK
+// container
+.icon-links__container {
+  background-color: $dark-grey;
+  display: flex;
+  justify-content: space-evenly;
+}
+// icon + name container
+.icon-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  // icon styles
+  &__icon--blue {
+    font-size: 50px;
+    color: $blue;
+    text-align: center;
+    padding-bottom: 40px;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  &__icon--red {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    padding-bottom: 40px;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+// DESTINATION BLOCK
+// container block 1
+.destination__container--1 {
+  background-image: url(../images/bg-spain--house.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 800px;
+  padding: 150px 0px 100px 100px;
+}
+// container block 2
+.destination__container--2 {
+  background-image: url(../images/bg-spain--mountain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 800px;
+  padding: 130px 100px 90px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+// text position
+.destination {
+  max-width: 600px;
+  max-height: 400px;
+  background-color: $grey;
+  opacity: 0.9;
+  &__city {
+    padding: 50px 0px 20px 30px;
+  }
+  &__place {
+    padding-left: 30px;
+  }
+  &__description {
+    padding: 25px 10px 30px 30px;
+  }
+  &__button {
+    padding: 0px 0px 50px 30px;
+  }
+}
+
+// TESTIMONIALS BLOCK
+// container
+.testimonials {
+  &__container {
+    background-image: url(../images/bg-testimonials.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__heading {
+    padding-top: 100px;
+  }
+}
+// TESTIMONAIL SAM
+// container
+.testimonial-sam {
+  margin: 80px 0px 100px 0px;
+  background-color: $dark-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  //    heading
+  &__info--heading {
+    padding: 10px 0px 0px 40px;
+  }
+  // quote
+  &__quote {
+    margin: 5px 22px 15px 22px;
+    display: flex;
+    // quote icon
+    &--icon {
+      font-size: 24px;
+      color: $blue;
+      padding: 10px;
+    }
+  }
+}
+
+// FOOTER
+// container
+.footer {
+  background-color: $grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  // bhromaon logo
+  &__logo {
+    padding-bottom: 20px;
+  }
+  // bhromaon moto
+  &__moto {
+    padding-bottom: 20px;
+  }
+  // socail-media icons
+  &__socail-media--icon {
+    padding-right: 15px;
+    font-size: 18px;
+    &-blue {
+      color: $blue;
+    }
+  }
+}
+
+// MEDIA QUERIES
+@media (max-width: 700px) {
+  // UNIVERSAL
+  .text {
+    &__title {
+      font-size: 36px;
+    }
+    &__moto {
+      font-size: 20px;
+    }
+    &__sub-heading {
+      font-size: 26px;
+    }
+  }
+  // SEARCH BLOCK / HEADER
+  .search__block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    &--input {
+      margin-bottom: 20px;
+      padding: 20px 60px 20px 60px;
+    }
+  }
+  // NAV
+  .nav {
+    flex-direction: column;
+    &__list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &--item {
+        margin-top: 20px;
+      }
+    }
+  }
+  // EXPLORE BLOCK
+  .explore__info {
+    padding-left: 20px;
+  }
+  .explore__images {
+    display: none;
+  }
+  // ICON BLOCK
+  .icon-links__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  // DESTINATION BLOCK
+  .destination {
+    &__container--1 {
+      padding: 100px 0px 100px 0px;
+    }
+    &__container--2 {
+      padding: 100px 0px 100px 0px;
+    }
+    &__description {
+      padding: 15px 10px 20px 30px;
+    }
+  }
+  //   TESTIMONIALS BLOCK
+  .testimonials__container {
+    max-height: 1000px;
+  }
+  .testimonial-sam {
+    flex-direction: column;
+    align-items: center;
+    &__image {
+      max-width: 300px;
+    }
+  }
+}
