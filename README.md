@@ -1,6 +1,8 @@
 # Exam_HTML-CSS
 Beetroot Academy Exam - HTML and CSS
 
+Live Page URL: https://mirinkakotze.github.io/Exam_HTML-CSS/
+
 Main rules:
 
 You will have 6 hours and the teacher will check your work time by the first and last commit time, so be careful. You can communicate with each other, use the internet, post on Stack Overflow but neither teacher nor code mentors can help you.
